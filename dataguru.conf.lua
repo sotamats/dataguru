@@ -21,6 +21,6 @@ sync {
    },
    ssh = {
      identityFile = "~/.ssh/id_rsa_dataguru",
-     port = 22
+     port = 8022
    }
 }
