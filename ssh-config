@@ -1,0 +1,5 @@
+Host sotamats
+     HostName sotamats.hopto.org
+     User dataguru
+     IdentityFile ~/.ssh/id_rsa_dataguru
+     StrictHostKeyChecking no
