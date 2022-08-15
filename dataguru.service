@@ -1,0 +1,11 @@
+[Unit]
+Description=Data Guru Server
+After=network.target network-online.target nss-lookup.target docker.service
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/docker run --rm --name dataguru --volume LOG_UPLOAD_PATH:/home/dataguru/log --volume /etc/dataguru:/etc/dataguru --volume /var/log/dataguru:/var/log/dataguru dataguru:0.1.0 lsyncd /etc/dataguru/dataguru.conf.lua
+
+[Install]
+WantedBy=multi-user.target

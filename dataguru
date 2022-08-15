@@ -1,0 +1,8 @@
+/var/log/dataguru/*log {
+    weekly
+    rotate 8
+    size 10M
+    compress
+    missingok
+    notifempty
+}
