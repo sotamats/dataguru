@@ -12,13 +12,13 @@ sync {
    host="sotamats",
    excludeFrom="/etc/dataguru/dataguru.exclude",
    targetdir="/home/dataguru/from_outside/BOT_ID/log",
-   cvs_exclude = false,
    delete = false,
    delay = 10,
    rsync = {
      archive = true,
      compress = true,
      whole_file = false,
+     cvs_exclude = false,
      verbose = false
    },
    ssh = {
