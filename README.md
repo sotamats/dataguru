@@ -31,3 +31,25 @@ $ sudo systemctl stop dataguru
 $ cd dataguru
 $ sudo make uninstall
 ```
+
+# Notice
+
+By default dataguru connects to 8022 port of `sotamats.hopto.org` from **outside** Shanghai Shoebot-lab. However if using **inside** Shoebot-lab, change `dataguru.conf.lua` to 22.
+
+### Outside Shanghai Lab
+
+dataguru.conf.lua
+```
+ssh = {
+  port = 8022
+}
+```
+
+### Inside Shanghai Lab
+
+dataguru.conf.lua
+```
+ssh = {
+  port = 22
+}
+```

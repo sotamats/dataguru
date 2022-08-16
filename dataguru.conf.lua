@@ -2,7 +2,8 @@ settings {
     logfile = "/var/log/dataguru/dataguru.log",
     statusFile = "/var/log/dataguru/dataguru-status.log",
     statusInterval = 20,
-    nodaemon = true
+    nodaemon = true,
+    maxProcesses = 1
 }
 
 sync {
@@ -11,6 +12,7 @@ sync {
    host="sotamats",
    excludeFrom="/etc/dataguru/dataguru.exclude",
    targetdir="/home/dataguru/from_outside/BOT_ID/log",
+   cvs_exclude = false,
    delete = false,
    delay = 10,
    rsync = {
