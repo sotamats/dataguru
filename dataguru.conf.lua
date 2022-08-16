@@ -18,7 +18,7 @@ sync {
      archive = true,
      compress = true,
      whole_file = false,
-     cvs_exclude = false,
+     cvs_exclude = true,
      verbose = false
    },
    ssh = {
